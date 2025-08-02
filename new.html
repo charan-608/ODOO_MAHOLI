@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Civic Issue Report</title>
+  <link rel="stylesheet" href="new.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="main-image">
+        <img src="your-image.jpg" alt="Issue Image" />
+        <span class="title-label">Pothole on main road</span>
+      </div>
+
+      <div class="thumbnail-gallery">
+        <img src="your-image.jpg" alt="thumb1" />
+        <img src="your-image.jpg" alt="thumb2" />
+        <img src="your-image.jpg" alt="thumb3" />
+        <img src="your-image.jpg" alt="thumb4" />
+      </div>
+
+      <div class="info">
+        <p><strong>Category:</strong> Roads</p>
+        <p><strong>Date & Time:</strong> 2/8/2025, 10:30:00 am</p>
+        <p><strong>Description:</strong> Dangerous pothole causing trouble daily.</p>
+        <p><strong>Location:</strong> BML Munjal, Amer Road, Manesar, Gurugram, Rewari, Haryana, 301019, India</p>
+      </div>
+
+      <div id="map"></div>
+    </div>
+  </div>
+
+  <script>
+    const map = L.map('map').setView([28.3805, 76.8462], 14);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+    L.marker([28.3805, 76.8462]).addTo(map);
+  </script>
+</body>
+</html>

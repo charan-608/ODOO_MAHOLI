@@ -5,8 +5,6 @@
 ![CivicTrack Logo] ![WhatsApp Image 2025-08-02 at 16 18 33_a1c00db9](https://github.com/user-attachments/assets/71271ada-1fca-47bf-99da-74271fe94659)
 
 
-*(Add your actual logo image here)* 
-
  
 
 ## 🚀 Overview 
